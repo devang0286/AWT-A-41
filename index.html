@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Eligibility Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Course Eligibility</h2>
+
+        <form id="eligibilityForm">
+            <label>Name:</label>
+            <input type="text" id="name" placeholder="Enter Full Name">
+
+            <label>Roll Number (2 letters + 3 digits, e.g., CS123):</label>
+            <input type="text" id="rollNo" placeholder="e.g., CS123">
+
+            <label>Age:</label>
+            <input type="number" id="age" placeholder="Enter Age">
+
+            <label>Attendance Percentage (%):</label>
+            <input type="number" id="attendance" placeholder="0 - 100">
+
+            <label>JavaScript Test Mark:</label>
+            <input type="number" id="marks" placeholder="0 - 100">
+
+            <button type="submit">Check Eligibility</button>
+        </form>
+
+        <p id="errorMsg"></p>
+    </div>
+
+    <div class="container" id="resultCard" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
